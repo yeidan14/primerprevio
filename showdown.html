@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iofrm</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/iofrm-style.css">
+    <link rel="stylesheet" type="text/css" href="css/iofrm-theme7.css">
+</head>
+<script>
+        var part="";
+        $.getJSON('datostable.json', function(datos){
+            $("#table72").html('');
+            $.each(datos["cartas"], function(idx,cartas){
+                $("#table72").append("<tr>"
+                +"<td>"+cartas["id"]+"</td><td>"+cartas["carta"]+"</td><td>"
+                +cartas.cantidad+"</td>"+"</tr>");
+    
+            });
+        });
+        </script>
+<body>
+    <div class="form-body" class="container-fluid">
+      <nav>
+            <a href="index.html">
+                <div class="logo">
+                    <img class="logo-size" width="5%" src="https://image.flaticon.com/icons/svg/2125/2125614.svg" alt="">
+                
+                </div>
+            </a>
+
+        </nav>
+       
+
+        <div class="row">
+         
+            <div class="col-md-4">
+
+                    <div>
+
+                <a href="#"> <img class="cartas"
+                        src="https://github.com/yeidan14/Imagenesprimerprevio/blob/master/1.png?raw=true" alt=""></a>
+                <a href="#"> <img class="cartas"
+                        src="https://github.com/yeidan14/Imagenesprimerprevio/blob/master/2.png?raw=true" alt=""></a>
+                <a href="#"><img class="cartas"
+                        src="https://github.com/yeidan14/Imagenesprimerprevio/blob/master/3.png?raw=true" alt=""></a>
+                <a href="#"> <img class="cartas"
+                        src="https://github.com/yeidan14/Imagenesprimerprevio/blob/master/4.png?raw=true" alt=""></a>
+                <a href="#"> <img class="cartas"
+                        src="https://github.com/yeidan14/Imagenesprimerprevio/blob/master/5.png?raw=true" alt=""></a>
+                <a href="#"> <img class="cartas"
+                        src="https://github.com/yeidan14/Imagenesprimerprevio/blob/master/6.png?raw=true" alt=""></a>
+                <a href="#"> <img class="cartas"
+                        src="https://github.com/yeidan14/Imagenesprimerprevio/blob/master/7.png?raw=true" alt=""></a>
+                <a href="#"> <img class="cartas"
+                        src="https://github.com/yeidan14/Imagenesprimerprevio/blob/master/8.png?raw=true" alt=""></a>
+                <a href="#"> <img class="cartas"
+                        src="https://github.com/yeidan14/Imagenesprimerprevio/blob/master/9.png?raw=true" alt=""></a>
+                <a href="#"> <img class="cartas"
+                        src="https://github.com/yeidan14/Imagenesprimerprevio/blob/master/10.png?raw=true" alt=""></a>
+                <a href="#"> <img class="cartas"
+                        src="https://github.com/yeidan14/Imagenesprimerprevio/blob/master/11.png?raw=true" alt=""></a>
+                <a href="#"> <img class="cartas"
+                        src="https://github.com/yeidan14/Imagenesprimerprevio/blob/master/12.png?raw=true" alt=""></a>
+                <a href="#"> <img class="cartas"
+                        src="https://github.com/yeidan14/Imagenesprimerprevio/blob/master/13.png?raw=true" alt=""></a>
+</div>
+
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <div class="col-md-4"></div>
+                <div class="form-content">
+                    <div class="form-items">
+                        <table id="table72" class="table table-striped">
+                            <thead>
+
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                        <form>
+                            <input class="form-control" type="text" name="nomrecarta" placeholder="Numero" required>
+                            <input class="form-control" type="password" name="password" placeholder="Carta" required>
+                            <div class="form-button">
+                                <button id="submit" type="submit" class="ibtn">Guardar</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "carta": "as de Diamante",
+        "catidad": "5"
+    },
+    {
+        "id": "2",
+        "carta": "dos de diamante",
+        "catidad": "6"
+    },
+    {
+        "id": "3",
+        "carta": "Tres de Diamante",
+        "catidad": "2"
+    },
+    {
+        "id": "4",
+        "carta": "$ de diamante",
+        "catidad": "10"
+    }
+]
